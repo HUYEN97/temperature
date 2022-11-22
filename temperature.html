@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <script>
+        let Temperature = function(celsius) {
+            this.celsius = celsius;         
+        
+        this.kelvin = function() {
+            return this.celsius + 273.15
+        }
+
+        this.fahrenheit = function() {
+            return  9/5 * this.celsius + 32;
+        }
+
+        }
+        let temperature = new Temperature(25);
+        let Fahrenheit = temperature.fahrenheit();
+        let Kelvin = temperature.kelvin();
+    document.write(`Temperature F ${Fahrenheit } độ Kelvin ${Kelvin}`)   
+
+               
+        
+    </script>
+    
+</body>
+</html>
